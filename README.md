@@ -28,10 +28,12 @@ and some others from
 
 > https://www.regular-expressions.info/examples.html
 
-Well, the **fortran_pcre** package is excelent but this one is different since it goes without the _iso_c_binding_ module.
+Well, the **fortran_pcre** package is excelent but this one is different since it goes without the _iso_c_binding_ module but with the casting type method in C language.
 
 + **make.sh** a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
 
 Lastly, run all the tests (30+ cases, or add more whatever you want) by the command 
 + **./t_pcreposix_gen.sh ./t_pcreposix_01.exe**
 Make sure all the Bash scripts have executable privilege, or add it using the _ chmod +x_ command.
+
+Report on any bug of this code at viet204@mail.com.
