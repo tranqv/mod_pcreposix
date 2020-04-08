@@ -13,9 +13,9 @@
 !     ./t_pcreposix_01.exe    'is\b'      'This island is beautiful.'
 !     ./t_pcreposix_01.exe    'is[A-z]'   'This island is beautiful.'
 !     ./t_pcreposix_01.exe    '[A-z]is'   'This island is beautiful.'
-!
 !     ./t_pcreposix_01.exe \
-!     "[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?"  "?&x=-0.1e-2&y=+1.2345e0&z=.12"
+!                             "[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?"  \
+!                                         "?&x=-0.1e-2&y=+1.2345e0&z=.12"
 !
 !
       program t_pcreposix_01
