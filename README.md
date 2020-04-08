@@ -9,21 +9,24 @@ Note on _"pcreposix"_:
 Alright here we go. 
 
 First, make sure that the lib _libpcreposix.a_ was installed in our system. It can be done quickly using the **apt-get** command. So far, e.g. in my computer, we have 
-+ /usr/include/pcreposix.h
-+ /usr/lib/x86_64-linux-gnu/libpcreposix.a
++ _/usr/include/pcreposix.h_
++ _/usr/lib/x86_64-linux-gnu/libpcreposix.a_
 
 Second, this package includes the following files:
-+ **c_pcreposix.c** C code wrapping the pcreposix functions
++ **c_pcreposix.c**: C code wrapping the pcreposix functions
 + **f_pcreposix.f90** Fortran module binding with the C code
-+ **t_pcreposix_01.f90** a testing program 
-+ **t_pcreposix_gen.sh** more than 30 test cases copied from 
++ **t_pcreposix_01.f90** a testing program. To compile, read its head or the **make.sh**. To know how to run, type the command  _./t_pcreposix_01.exe_ without arguments.
++ **t_pcreposix_gen.sh** a Bash script to perform more than 30 test cases which are copied from 
 
 >> https://github.com/niklongstone/regular-expression-cheat-sheet
 
+and 
+
 >> https://github.com/ZedThree/fortran_pcre
 
-well, the latter module is excelent but this one is different.
-+ **make.sh** all run after this shot: _./make.sh_
+Well, the latter module is excelent but this package is different.
+
++ **make.sh** a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
 
 Lastly, run all the test cases by the command 
 + **./t_pcreposix_gen.sh ./t_pcreposix_01.exe**
