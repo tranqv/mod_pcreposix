@@ -30,16 +30,8 @@
       integer(kind=ck_size_t)    lt_pattern, lt_xstring  
       integer(kind=ck_int)       istat, nfound, i 
       integer(kind=ck_regexref)  preg
-
 !
-!     pattern = "\bwh(.)t\b"
-!     str   = "I know whot the hell is what. It is whatever you think."
-
-!     pattern = "\bis\b"
-!     pattern = "is"
-!     str   = "This island is beautiful."
-
-
+!
       if ( command_argument_count() .lt. 2 ) goto 600
 
       call get_command_argument( 1, pattern ) 
