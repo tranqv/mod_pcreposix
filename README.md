@@ -24,9 +24,11 @@ and
 
 > https://github.com/ZedThree/fortran_pcre
 
-Well, the latter module is excelent but this package is different.
+Well, the latter module is excelent but this package is different. It goes without the _iso_c_binding_ module.
+
 
 + **make.sh** a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
 
 Lastly, run all the test cases by the command 
 + **./t_pcreposix_gen.sh ./t_pcreposix_01.exe**
+Make sure all the Bash scripts have executable privilege, or add it using the _ chmod +x_ command.
