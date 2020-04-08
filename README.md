@@ -32,6 +32,6 @@ Well, the **fortran_pcre** package is excelent but this one is different since i
 
 + **make.sh** a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
 
-Lastly, run all the tests (30+ cases) by the command 
+Lastly, run all the tests (30+ cases, or add more whatever you want) by the command 
 + **./t_pcreposix_gen.sh ./t_pcreposix_01.exe**
 Make sure all the Bash scripts have executable privilege, or add it using the _ chmod +x_ command.
