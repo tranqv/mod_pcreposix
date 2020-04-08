@@ -18,11 +18,11 @@ Second, this package includes the following files:
 + **t_pcreposix_01.f90** a testing program. To compile, read its head or the **make.sh**. To know how to run, type the command  _./t_pcreposix_01.exe_ without arguments.
 + **t_pcreposix_gen.sh** a Bash script to perform more than 30 test cases which are copied from 
 
->> https://github.com/niklongstone/regular-expression-cheat-sheet
+> https://github.com/niklongstone/regular-expression-cheat-sheet
 
 and 
 
->> https://github.com/ZedThree/fortran_pcre
+> https://github.com/ZedThree/fortran_pcre
 
 Well, the latter module is excelent but this package is different.
 
