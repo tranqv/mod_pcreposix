@@ -1,3 +1,3 @@
 # LICENSE
 
-It's free. Ok?
+It's just free!
