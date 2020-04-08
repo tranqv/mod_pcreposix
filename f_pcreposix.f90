@@ -4,8 +4,6 @@
 !
 !        gfortran -O3 -Wall -c f_pcreposix.f90 
 !
-!     Say whatever you want ... 
-!
 !-----------------------------------------------------------------------
 !
       module mod_pcreposix 
