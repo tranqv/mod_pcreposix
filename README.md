@@ -17,11 +17,17 @@ Second, this package includes the following files:
 + **f_pcreposix.f90** Fortran module binding with the C code
 + **t_pcreposix_01.f90** a testing program. To compile, read its head or the **make.sh**. To know how to run, type the command  _./t_pcreposix_01.exe_ without arguments.
 + **t_pcreposix_gen.sh** a Bash script to perform more than 30 test cases which are copied from 
+
 > https://github.com/niklongstone/regular-expression-cheat-sheet
+
 and 
+
 > https://www.regular-expressions.info/examples.html
+
 and some others from 
+
 > https://github.com/ZedThree/fortran_pcre
+
 Well, the **fortran_pcre** package is excelent but this one is different since it goes without the _iso_c_binding_ module.
 
 
