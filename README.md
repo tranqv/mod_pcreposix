@@ -22,11 +22,11 @@ Second, this package includes the following files:
 
 and 
 
-> https://www.regular-expressions.info/examples.html
+> https://github.com/ZedThree/fortran_pcre
 
 and some others from 
 
-> https://github.com/ZedThree/fortran_pcre
+> https://www.regular-expressions.info/examples.html
 
 Well, the **fortran_pcre** package is excelent but this one is different since it goes without the _iso_c_binding_ module.
 
