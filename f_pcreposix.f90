@@ -57,7 +57,7 @@
       integer,parameter,public :: reg_espace    = 14
       integer,parameter,public :: reg_badrpt    =  4
 !
-!
+!     add more constants as you want ... 
 !
       public :: pcre_regcomp
       interface pcre_regcomp
