@@ -1,6 +1,6 @@
 # mod_pcreposix
 
-This is another portable Fortran module for working with the Perl compatible regular expressions. It runs in Linux and was well tested in Debian 9 (4.9.0-12-amd64) with gcc version 6.3.0.
+Another portable Fortran module for working with the Perl compatible regular expressions.
 
 Note on _"pcreposix"_: 
 + **PCRE**: Perl-Compatible Regular Expressions
@@ -33,5 +33,7 @@ Well, the **fortran_pcre** package is excelent but this one is different since i
 **3)** Run all the tests (30+ cases, or add more by yourself) by the command 
 + **./t_pcreposix_gen.sh ./t_pcreposix_01.exe**
 Make sure all the Bash scripts have the executable permission, or add it using the _chmod +x_ command.
+
+The package was well tested in Debian 9 (4.9.0-12-amd64) with gcc version 6.3.0.
 
 Report on any bug of this code at viet204@mail.com.
