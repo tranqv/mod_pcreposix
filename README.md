@@ -8,11 +8,11 @@ Note on _"pcreposix"_:
 
 Alright here we go. 
 
-First, make sure that the lib _libpcreposix.a_ was installed in our system. It can be done quickly using the **apt-get** command. So far, e.g. in my computer, we should have 
+**1)** Make sure that the lib _libpcreposix.a_ was installed in our system. It can be done quickly using the **apt-get** command. So far, e.g. in my computer, we should have 
 + _/usr/include/pcreposix.h_
 + _/usr/lib/x86_64-linux-gnu/libpcreposix.a_
 
-Second, this package includes the following files:
+**2)** Files:
 + **c_pcreposix.c**: C code wrapping the pcreposix functions
 + **f_pcreposix.f90**: Fortran module binding with the C code
 + **t_pcreposix_01.f90**: A testing program. To compile, read its head or the **make.sh**. To know how to run, type the command  _./t_pcreposix_01.exe_ without arguments.
@@ -32,8 +32,8 @@ Well, the **fortran_pcre** package is excelent but this one is different since i
 
 + **make.sh** a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
 
-Lastly, run all the tests (30+ cases, or add more whatever you want) by the command 
+**3)** Run all the tests (30+ cases, or add more whatever you want) by the command 
 + **./t_pcreposix_gen.sh ./t_pcreposix_01.exe**
-Make sure all the Bash scripts have the executable privilege, or add it using the _chmod +x_ command.
+Make sure all the Bash scripts have the executable permission, or add it using the _chmod +x_ command.
 
 Report on any bug of this code at viet204@mail.com.
