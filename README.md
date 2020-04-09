@@ -44,6 +44,23 @@ Well, the **fortran_pcre** package is excelent but this one is different since i
 + **./t_pcreposix_gen.sh ./t_pcreposix_01.exe**
 Make sure all the Bash scripts have the executable permission, or add it using the _chmod +x_ command.
 
+
+**4)** Common framework in practice
+
+     1. call pcre_regcomp ( preg, pattern, istat ) 
+     2. call pcre_regexec ( preg, str, pmatch, nmatch, nfound ) 
+     3. call pcre_regfree ( preg ) 
+   
+   where 
+   
+     preg     integer(kind=8)
+     pattern  character(len=*)
+     istat    integer(kind=4)
+     str      character(len=*)
+     pmatch   integer(kind(4), dimension(2,nmatch)
+     nmatch   integer(kind=4)
+     nfound   integer(kind=4)
+
 The package was well tested in Debian 9 (4.9.0-12-amd64) with gcc version 6.3.0.
 
 Report on any bug of this code at viet204@mail.com.
