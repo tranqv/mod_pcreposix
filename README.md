@@ -74,3 +74,25 @@ Make sure all the Bash scripts had the executable permission, or add it in advan
 The package was well tested in Debian 9 (4.9.0-12-amd64) with gcc version 6.3.0.
 
 Report on any bug of this code at viet204@mail.com.
+
+**UPDATE:**
+
+
++ **exe_param.c**: C code generating parameters for **mod_pcreposix.f90** in-situ.
+
++ **make.sh** has been changed. At the very first time, 
+run 
+
+      ./make.sh  config 
+
+to generate **mod_pcreposix.f90** accordingly to local system, 
+because the C code 
+**exe_param.c**
+will be compiled so as it can generate values of the parameters. Just do it only one time.
+In addition, run 
+
+      ./make.sh  clean 
+
+to clean out.
+
+

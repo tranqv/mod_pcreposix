@@ -1,8 +1,9 @@
+!@@@@@2020-04-09_20-24-41
 !-----------------------------------------------------------------------
 !
 !     Compile:
 !
-!        gfortran -O3 -Wall -c f_pcreposix.f90 
+!        gfortran -O3 -Wall -c mod_pcreposix.f90 
 !
 !     Author   Tran Quoc Viet 
 !     Email    viet204@gmail.com
@@ -15,21 +16,23 @@
 !
       private 
 !
-!     logical,parameter  :: sayout = .true. 
-      logical,parameter  :: sayout = .false. 
-!
-      integer,parameter,public :: ck_regexref   =  8 
+!@@@@@BeginParam
+!     
+!     logical,parameter :: sayout = .true.  
+      logical,parameter :: sayout = .false. 
+!     
+      integer,parameter,public :: ck_regexref   =  8
       integer,parameter,public :: ck_size_t     =  8
       integer,parameter,public :: ck_int        =  4
       integer,parameter,public :: ck_regoff_t   =  4
-!
-      type, public :: ck_regmatch_t 
-         integer(kind = ck_regoff_t)  :: rm_so 
-         integer(kind = ck_regoff_t)  :: rm_eo 
+!     
+      character,parameter :: ck_char_nul  = achar(  0)  ! NULL char
+!     
+      type,public :: ck_regmatch_t 
+         integer(kind = ck_regoff_t) :: rm_so 
+         integer(kind = ck_regoff_t) :: rm_eo 
       end type ck_regmatch_t 
-!
-      character,parameter :: ck_char_nul =  char(0)   ! private
-!
+!     
 !     CFLAGS in regcomp() is the bitwise-inclusive
 !        OR of zero or more of the following flags
 !     
@@ -59,6 +62,8 @@
       integer,parameter,public :: reg_erange    = 12
       integer,parameter,public :: reg_espace    = 14
       integer,parameter,public :: reg_badrpt    =  4
+!     
+!@@@@@EndParam
 !
 !     ... add more constants as you want
 !
