@@ -8,14 +8,19 @@ Note on _"pcreposix"_:
 
 **1)** Make sure that the lib _libpcreposix.a_ was installed in our system. It can be done quickly using the **apt-get** command. For instance, in Debian 8 (Jessie), 
 + _sudo apt-get install libpcre3-dev_
+
 and one should have 
 + _/usr/include/pcreposix.h_
 + _/usr/lib/x86_64-linux-gnu/libpcreposix.a_
 
-Ref.: 
+Ref., for Debian, 
 > https://manpages.debian.org/jessie/libpcre3-dev/index.html
 
 > https://manpages.debian.org/jessie/libpcre3-dev/pcreposix.3.en.html
+
+for Centos,  
+
+> https://centos.pkgs.org/7/centos-x86_64/pcre-8.32-17.el7.x86_64.rpm.html
 
 **2)** Files:
 + **c_pcreposix.c**: C code wrapping the pcreposix functions
