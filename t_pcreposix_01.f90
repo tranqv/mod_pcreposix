@@ -33,7 +33,7 @@
 !     integer(kind=ck_int)       istat, nfound, i 
 !     integer(kind=ck_regexref)  preg
 !
-!     But, for simplicity, just declare as follows
+!     Or, for simplicity, just declare as follows
 !
       integer(kind=8),        parameter :: maxlen = 4096
       integer(kind=8),        parameter ::  nmatch = 100 
