@@ -34,7 +34,6 @@
    pcreposix_regcomp is defined in #include <pcreposix.h>
 */
 
-
 void  c_regcomp_intptr_ ( 
       intptr_t *preg_ref, const char *pattern, int *cflags, int *istat ) 
 {
