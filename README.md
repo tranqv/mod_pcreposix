@@ -26,15 +26,13 @@ for Centos,
 + **c_pcreposix.c**: C code wrapping the pcreposix functions
 + **f_pcreposix.f90**: Fortran module binding with the C code
 + **t_pcreposix_01.f90**: A testing program. To compile, read its head or the **make.sh**. To know how to run, type the command  _./t_pcreposix_01.exe_ without arguments.
-+ **t_pcreposix_gen.sh**: A Bash script to perform more than 30 test cases which are copied from 
++ **t_pcreposix_gen.sh**: A Bash script to perform 30 test cases which are copied from 
 
 > https://github.com/niklongstone/regular-expression-cheat-sheet
 
-and 
-
 > https://github.com/ZedThree/fortran_pcre
 
-and some others from 
+and some other cases from 
 
 > https://www.regular-expressions.info/examples.html
 
