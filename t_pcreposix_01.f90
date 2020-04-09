@@ -23,13 +23,25 @@
       use  mod_pcreposix
 
       implicit none    
-      integer(kind=ck_size_t),parameter :: maxlen = 4096
-      integer(kind=ck_size_t),parameter ::  nmatch = 100 
-      integer(kind=ck_int)       pmatch(2,nmatch)
+!
+!     One can define as follows
+!     integer(kind=ck_size_t),parameter :: maxlen = 4096
+!     integer(kind=ck_size_t),parameter ::  nmatch = 100 
+!     integer(kind=ck_int)       pmatch(2,nmatch)
+!     character(len=maxlen)      pattern, xstring
+!     integer(kind=ck_size_t)    lt_pattern, lt_xstring  
+!     integer(kind=ck_int)       istat, nfound, i 
+!     integer(kind=ck_regexref)  preg
+!
+!     But, for simplicity, just declare as follows
+!
+      integer(kind=8),        parameter :: maxlen = 4096
+      integer(kind=8),        parameter ::  nmatch = 100 
+      integer(kind=4)            pmatch(2,nmatch)
       character(len=maxlen)      pattern, xstring
-      integer(kind=ck_size_t)    lt_pattern, lt_xstring  
-      integer(kind=ck_int)       istat, nfound, i 
-      integer(kind=ck_regexref)  preg
+      integer(kind=8)            lt_pattern, lt_xstring  
+      integer(kind=4)            istat, nfound, i 
+      integer(kind=8)            preg
 !
 !
       if ( command_argument_count() .lt. 2 ) goto 600
@@ -53,7 +65,7 @@
 
       call  pcre_regfree ( preg )
   
-      write(*,*) 'regfree() done.'
+      print *, 'regfree() done.'
       print 72  
 !
 !
@@ -98,7 +110,7 @@
       stop 
 !
  700  continue 
-      write(*,'(a)') 'regcomp() failed, istat =', istat 
+      print *, 'regcomp() failed, istat =', istat 
       stop 
 !
       end program t_pcreposix_01
