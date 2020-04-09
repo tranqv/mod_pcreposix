@@ -19,7 +19,6 @@
 #include <pcreposix.h>
 
 ////////////////////////////////////////////////////////////////////////////////
-
 /*
    int   regcomp ( 
          regex_t *restrict preg, const char *restrict pattern, int cflags);
@@ -45,7 +44,6 @@ void  c_regcomp_intptr_ (
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-
 /*
    int   regexec (
          const regex_t *preg, const char *string, 
