@@ -10,8 +10,8 @@ Note on _"pcreposix"_:
 + _sudo apt-get install libpcre3 libpcre3-dev_
 
 and one should have 
-+ _/usr/include/pcreposix.h_
-+ _/usr/lib/x86_64-linux-gnu/libpcreposix.a_
++ /usr/include/pcreposix.h
++ /usr/lib/x86_64-linux-gnu/libpcreposix.a
 
 Ref., for Debian, 
 > https://manpages.debian.org/jessie/libpcre3-dev/index.html
