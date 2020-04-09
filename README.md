@@ -13,7 +13,7 @@ and one should have
 + /usr/include/pcreposix.h
 + /usr/lib/x86_64-linux-gnu/libpcreposix.a
 
-Ref., for Debian, 
+Further ref. for Debian, 
 > https://manpages.debian.org/jessie/libpcre3-dev/index.html
 
 > https://manpages.debian.org/jessie/libpcre3-dev/pcreposix.3.en.html
