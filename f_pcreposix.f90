@@ -181,6 +181,16 @@
 !     2. call *regexec* ( preg, str, pmatch, nmatch, nfound ) 
 !     3. call *regfree* ( preg ) 
 !
+!     where 
+!
+!        preg     integer(kind=8)
+!        pattern  character(len=*)
+!        istat    integer(kind=4)
+!        str      character(len=*)
+!        pmatch   integer(kind(4), dimension(2,nmatch)
+!        nmatch   integer(kind=4)
+!        nfound   integer(kind=4)
+!
 !-----------------------------------------------------------------------
 !
       subroutine  pcre_regcomp_intptr_1 ( preg_ref, pattern, istat ) 
