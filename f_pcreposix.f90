@@ -187,7 +187,7 @@
 !        pattern  character(len=*)
 !        istat    integer(kind=4)
 !        str      character(len=*)
-!        pmatch   integer(kind(4), dimension(2,nmatch)
+!        pmatch   integer(kind=4), dimension(2,nmatch)
 !        nmatch   integer(kind=4)
 !        nfound   integer(kind=4)
 !
