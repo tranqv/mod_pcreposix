@@ -36,7 +36,7 @@ and some other cases from
 
 > https://www.regular-expressions.info/examples.html
 
-Well, the **fortran_pcre** package is excelent but this one is different since it goes without the _iso_c_binding_ module.
+Well, the **fortran_pcre** package is excelent but this one goes without the _iso_c_binding_ module. It's just simple.
 
 + **make.sh**: a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
 
