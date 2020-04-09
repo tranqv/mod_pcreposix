@@ -85,7 +85,7 @@ run
 
       ./make.sh  config 
 
-to revise **mod_pcreposix.f90** accordingly to local system, 
+to revise **mod_pcreposix.f90** accordingly to your local system, 
 because the C code 
 **exe_param.c**
 will be compiled so as it can generate values of the parameters within the region marked by 
