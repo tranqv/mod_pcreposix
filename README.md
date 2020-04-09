@@ -6,9 +6,9 @@ Note on _"pcreposix"_:
 + **PCRE**: Perl-Compatible Regular Expressions
 + **POSIX**: Portable Operating System Interface, where X may stand for Unix (I guess :D)
 
-**1)** Make sure that the lib _libpcreposix.a_ was installed in our system. It can be done quickly using the **apt-get** command.
+**1)** Make sure that the lib _libpcreposix.a_ was installed in our system. It can be done quickly using the **apt-get** command. For instance, in Debian 8 (Jessie), 
 + _sudo apt-get install libpcre3-dev_
-So far, e.g. in my computer, we should have 
+and one should have 
 + _/usr/include/pcreposix.h_
 + _/usr/lib/x86_64-linux-gnu/libpcreposix.a_
 
