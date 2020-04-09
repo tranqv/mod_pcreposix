@@ -38,7 +38,7 @@ and some other cases from
 
 Well, the **fortran_pcre** package is excelent but this one is different since it goes without the _iso_c_binding_ module.
 
-+ **make.sh** a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
++ **make.sh**: a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
 
 **3) Compiles.**
 + _gcc -O3 -Wall -c c_pcreposix.c_
