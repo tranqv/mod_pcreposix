@@ -40,14 +40,22 @@ Well, the **fortran_pcre** package is excelent but this one is different since i
 
 + **make.sh** a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
 
-**3) Tests.** Run all the tests (30+ cases, or add more by yourself) by the command 
+**3) Compiles.**
++ gcc -O3 -Wall -c c_pcreposix.c
++ gfortran -O3 -Wall -c f_pcreposix.f90 
++ gfortran -O3 -Wall t_pcreposix_01.f90 *.o -lpcreposix -o t_pcreposix_01.exe
+
+**4) Tests.** Run all the tests (30+ cases, or add more by yourself) by the command 
 + **./t_pcreposix_gen.sh ./t_pcreposix_01.exe**
 
 Make sure all the Bash scripts had the executable permission, or add it in advance by using the command 
 + _chmod +x *.sh_
 
+**5) Run all.** All run after this one shot
 
-**4) Usage.** Common framework in practice
++ _./make.sh_
+
+**Usage:** Common framework in practice
 
      1. call pcre_regcomp ( preg, pattern, istat ) 
      2. call pcre_regexec ( preg, str, pmatch, nmatch, nfound ) 
