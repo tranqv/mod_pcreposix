@@ -44,6 +44,8 @@ Well, the **fortran_pcre** package is excelent but this one is different since i
 + **./t_pcreposix_gen.sh ./t_pcreposix_01.exe**
 Make sure all the Bash scripts have the executable permission, or add it using the _chmod +x_ command.
 
++ _chmod +x *.sh_
+
 
 **4) Usage.** Common framework in practice
 
