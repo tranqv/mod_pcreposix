@@ -73,4 +73,4 @@ Make sure all the Bash scripts had the executable permission, or add it in advan
 
 The package was well tested in Debian 9 (4.9.0-12-amd64) with gcc version 6.3.0.
 
-Report on any bug of this code at viet204@mail.com.
+Report on any bug of this code to viet204@mail.com.
