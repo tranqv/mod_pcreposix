@@ -4,6 +4,9 @@
 !
 !        gfortran -O3 -Wall -c f_pcreposix.f90 
 !
+!     Author   Tran Quoc Viet 
+!     Email    viet204@gmail.com
+!
 !-----------------------------------------------------------------------
 !
       module mod_pcreposix 
