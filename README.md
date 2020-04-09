@@ -55,7 +55,7 @@ Make sure all the Bash scripts had the executable permission, or add it in advan
 
 + _./make.sh_
 
-**Usage:** Common framework in practice
+**USAGE:**
 
      1. call pcre_regcomp ( preg, pattern, istat ) 
      2. call pcre_regexec ( preg, str, pmatch, nmatch, nfound ) 
