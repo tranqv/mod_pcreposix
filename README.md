@@ -4,7 +4,7 @@ Another portable Fortran module for working with the Perl compatible regular exp
 
 Note on _"pcreposix"_: 
 + **PCRE**: Perl-Compatible Regular Expressions
-+ **POSIX**: Portable Operating System Interface, where X may stand for Unix (I guess :D)
++ **POSIX**: Portable Operating System Interface, where X may stand for Unix (??? :D)
 
 **1) Requires.** Make sure that the lib _libpcreposix.a_ was installed in our system. It can be done quickly using the **apt-get** command. For instance, in Debian 8 (Jessie), 
 + _sudo apt-get install libpcre3 libpcre3-dev_
