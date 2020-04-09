@@ -24,7 +24,7 @@ for Centos,
 
 **2) Provides.** Files:
 + **dep_pcreposix.c**: C code wrapping the pcreposix functions
-+ **dep_pcreposix.f90**: Fortran module binding with the C code
++ **mod_pcreposix.f90**: Fortran module binding with the C code
 + **t_pcreposix_01.f90**: A testing program. To compile, read its head or the **make.sh**. To know how to run, type the command  _./t_pcreposix_01.exe_ without arguments.
 + **t_pcreposix_gen.sh**: A Bash script to perform 30 test cases which are copied from 
 
@@ -42,7 +42,7 @@ Well, the **fortran_pcre** package is excelent but this one goes without the **i
 
 **3) Compiles.**
 + _gcc -O3 -Wall -c dep_pcreposix.c_
-+ _gfortran -O3 -Wall -c dep_pcreposix.f90_
++ _gfortran -O3 -Wall -c mod_pcreposix.f90_
 + _gfortran -O3 -Wall t_pcreposix_01.f90 *.o -lpcreposix -o t_pcreposix_01.exe_
 
 **4) Tests.** Run all the tests (30+ cases, or add more by yourself) by the command 
