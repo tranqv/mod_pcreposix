@@ -6,7 +6,7 @@ Note on _"pcreposix"_:
 + **PCRE**: Perl-Compatible Regular Expressions
 + **POSIX**: Portable Operating System Interface, where X may stand for Unix (I guess :D)
 
-**1)** Make sure that the lib _libpcreposix.a_ was installed in our system. It can be done quickly using the **apt-get** command. For instance, in Debian 8 (Jessie), 
+**1) Requires.** Make sure that the lib _libpcreposix.a_ was installed in our system. It can be done quickly using the **apt-get** command. For instance, in Debian 8 (Jessie), 
 + _sudo apt-get install libpcre3-dev_
 
 and one should have 
@@ -22,7 +22,7 @@ for Centos,
 
 > https://centos.pkgs.org/7/centos-x86_64/pcre-8.32-17.el7.x86_64.rpm.html
 
-**2)** Files:
+**2) Provides.** Files:
 + **c_pcreposix.c**: C code wrapping the pcreposix functions
 + **f_pcreposix.f90**: Fortran module binding with the C code
 + **t_pcreposix_01.f90**: A testing program. To compile, read its head or the **make.sh**. To know how to run, type the command  _./t_pcreposix_01.exe_ without arguments.
@@ -40,12 +40,12 @@ Well, the **fortran_pcre** package is excelent but this one is different since i
 
 + **make.sh** a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
 
-**3)** Run all the tests (30+ cases, or add more by yourself) by the command 
+**3) Tests.** Run all the tests (30+ cases, or add more by yourself) by the command 
 + **./t_pcreposix_gen.sh ./t_pcreposix_01.exe**
 Make sure all the Bash scripts have the executable permission, or add it using the _chmod +x_ command.
 
 
-**4)** Common framework in practice
+**4) Usage.** Common framework in practice
 
      1. call pcre_regcomp ( preg, pattern, istat ) 
      2. call pcre_regexec ( preg, str, pmatch, nmatch, nfound ) 
