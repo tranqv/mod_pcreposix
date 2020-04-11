@@ -1,6 +1,6 @@
 # mod_pcreposix
 
-Another portable Fortran module for working with the Perl compatible regular expressions.
+Another portable Fortran module for working (in Unix) with the Perl compatible regular expressions.
 
 Note on _"pcreposix"_: 
 + **PCRE**: Perl-Compatible Regular Expressions
