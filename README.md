@@ -1,15 +1,15 @@
 # mod_pcreposix
 
-Another portable Fortran module for working (in Unix) with the Perl compatible regular expressions.
+A portable Fortran module for working (in Unix) with the Perl compatible regular expressions.
 
-Note on _"pcreposix"_: 
+Notes for _"pcreposix"_: 
 + **PCRE**: Perl-Compatible Regular Expressions
 + **POSIX**: Portable Operating System Interface, where X may stand for Unix (??? :D)
 
-**1) Requires.** Make sure that the libs of _pcre_ and _pcreposix_ (i.e. _libpcre.a_ and _libpcreposix.a_) were installed in our system. For instance in Debian 8 (Jessie), it can be done quickly using the **apt-get** command: 
+**1) Requires.** Make sure that the libs of _pcre_ and _pcreposix_ (i.e. _libpcre.a_ and _libpcreposix.a_) were installed in our system. For instance, in Debian 8 (Jessie), we can install it quickly using the **apt-get** command: 
 + _sudo apt-get install libpcre3 libpcre3-dev_
 
-and one should have 
+and we should have 
 + /usr/include/pcreposix.h
 + /usr/lib/x86_64-linux-gnu/libpcreposix.a
 
@@ -18,7 +18,7 @@ Further ref. for Debian,
 
 > https://manpages.debian.org/jessie/libpcre3-dev/pcreposix.3.en.html
 
-for Centos,  
+and for Centos,  
 
 > https://centos.pkgs.org/7/centos-x86_64/pcre-8.32-17.el7.x86_64.rpm.html
 
@@ -36,22 +36,22 @@ and some other cases from
 
 > https://www.regular-expressions.info/examples.html
 
-Well, the **fortran_pcre** package is excelent but this one goes without the **iso_c_binding** module. It's just simple.
+The **fortran_pcre** package is excelent but this **mod_pcreposix** goes without the **iso_c_binding** module. It's just simple.
 
-+ **make.sh**: a Bash script. All the things (compiling, linking, running tests) will be executed after this command _./make.sh_
++ **make.sh**: a Bash script. All (compiling, linking, running tests) will run after this command _./make.sh_
 
 **3) Compiles.**
 + _gcc -O3 -Wall -c dep_pcreposix.c_
 + _gfortran -O3 -Wall -c mod_pcreposix.f90_
 + _gfortran -O3 -Wall t_pcreposix_01.f90 *.o -lpcreposix -o t_pcreposix_01.exe_
 
-**4) Tests.** Run all the tests (30+ cases, or add more by yourself) by the command 
+**4) Tests.** Run all the tests (30+ cases, or you can add more by yourself) by the command 
 + _./t_pcreposix_gen.sh ./t_pcreposix_01.exe_
 
-Make sure all the Bash scripts had the executable permission, or add it in advance by using the command 
+Make sure all the Bash scripts had the executable permission, or add it using the command 
 + _chmod +x *.sh_
 
-**5) Run all.** All run after this one shot
+**5) Run all.** To run all after this command 
 
 + _./make.sh_
 
@@ -98,7 +98,7 @@ will be compiled so as it can generate values of the parameters within the regio
       ...
       !@@@@@EndParam
 
-of this Fortran file. Just do it only one time.
+in the Fortran file. Just do it only one time.
 In addition, run 
 
       ./make.sh  clean 
