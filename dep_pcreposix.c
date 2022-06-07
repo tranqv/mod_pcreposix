@@ -10,7 +10,7 @@
 // Email    viet204@gmail.com
 //
 // Here I use intptr_t integer to store "regex_t *" for simplicity (I dont care
-// the "regex_t" data structure in practice). The casting types is very fast. 
+// the "regex_t" data structure in practice). The type casting is very fast. 
 // Check it out!
 //
 ////////////////////////////////////////////////////////////////////////////////
